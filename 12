@@ -1,0 +1,16 @@
+numarul=[]
+numere_pare=0
+numere_impare=0
+with open ('input.txt', 'r') as f:
+    n=f.readline()
+for i in n:
+    numarul+=i
+for i in numarul:
+    if (int(i)%2)==0 :
+        numere_pare+=1
+    else:
+        numere_impare+=1
+with open ('output.txt', 'w') as f:
+    f.write(f'sunt {numere_pare} numere pare')
+    f write('\n')
+    f.write(f'sunt {numere_impare} numere impare')
